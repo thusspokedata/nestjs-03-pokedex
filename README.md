@@ -8,4 +8,28 @@ Nestjs, integration con mongodb:
 yarn add @nestjs/mongoose mongoose
 
 las entidades hacen referencia a como nosotros queremos nuestras bases de datos
+
 # nestjs-03-pokedex
+
+3. Tener Nest CLI instalado
+
+```bash
+npm i -g @nestjs/cli
+```
+
+4. Levantar la base de datos
+
+```bash
+docker-compose up -d
+```
+
+5. Reconstruir la ase de datos con la semilla
+
+```
+http://localhost:3000/api/v2/seed
+```
+
+## Stack usado
+
+- MongoDB
+- Nest
