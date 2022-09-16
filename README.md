@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="50" alt="Nest Logo" /></a>
 </p>
 ```bash
 nest g res pokemon --no-spec
@@ -10,6 +10,15 @@ yarn add @nestjs/mongoose mongoose
 las entidades hacen referencia a como nosotros queremos nuestras bases de datos
 
 # nestjs-03-pokedex
+
+# Ejecutar en desarrollo
+
+1. Clonar el repositorio
+2. Ejecutar
+
+```
+yarn install
+```
 
 3. Tener Nest CLI instalado
 
