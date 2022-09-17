@@ -1,17 +1,10 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="50" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="100" alt="Nest Logo" /></a>
 </p>
-```bash
-nest g res pokemon --no-spec
 
-Nestjs, integration con mongodb:
-yarn add @nestjs/mongoose mongoose
+# NestJs - Pokedex
 
-las entidades hacen referencia a como nosotros queremos nuestras bases de datos
-
-# nestjs-03-pokedex
-
-# Ejecutar en desarrollo
+## Ejecutar en desarrollo
 
 1. Clonar el repositorio
 2. Ejecutar
@@ -46,7 +39,6 @@ yarn start:dev
 
 ```
 http://localhost:3000/api/v2/seed
-
 ```
 
 ## Stack usado
@@ -54,6 +46,21 @@ http://localhost:3000/api/v2/seed
 - MongoDB
 - Nest
 
+# Production Build
+
+1. Crear el archivo `.env.prod`
+2. Llenar las variables de entorno de prod
+3. Crear la nueva imagen
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
 ```
 
+# Notas
+
+Heroku redeploy sin cambios:
+
+```
+git commit --allow-empty -m "Trigger Heroku deploy"
+git push heroku <master|main>
 ```
