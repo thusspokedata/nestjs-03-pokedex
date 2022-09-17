@@ -40,3 +40,5 @@ lerna-debug.log*
 
 /yarn.lock
 yarn.lock
+
+package-lock.json
